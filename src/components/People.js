@@ -22,12 +22,12 @@ componentDidMount(){
   }
 }
 
-handleClick = (person) => {
-  const press = this.state.press
-  this.setState({ press: !press })
-  if (press === true)
-    <Redirect person={person} to={`/planets/${person.id}/`} />
-}
+// handleClick = (person) => {
+//   const press = this.state.press
+//   this.setState({ press: !press })
+//   if (press === true)
+//     <Redirect person={person} to={`/planets/${person.id}/`} />
+// }
 
 
   render() {
@@ -55,7 +55,7 @@ handleClick = (person) => {
                     </Card.Content>
                     <Card.Content extra>
                       <Button
-                       onClick={ () => this.handleClick(person)}
+                      //  onClick={ () => this.handleClick(person)}
                       >
                         See Home Planet
                       </Button>
